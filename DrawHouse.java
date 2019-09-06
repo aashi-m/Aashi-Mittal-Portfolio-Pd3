@@ -42,8 +42,19 @@ pencil.turnRight (90);
 pencil.forward (40);
 pencil.turnLeft (90);
 pencil.forward (20);
-
-
+pencil.turnLeft (90);
+pencil.forward (40);
+/*a few questions I have: can I change the color of the pencil, can I lift
+ * it or choose where to start
+ */
+pencil.turnRight(90);
+pencil.forward (100);
+pencil.turnRight (90);
+pencil.forward (160);
+pencil.turnRight (90);
+pencil.forward (30);
+pencil.turnRight (90);
+pencil.forward (30);
  
   
   
