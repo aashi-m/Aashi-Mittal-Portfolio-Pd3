@@ -6,13 +6,17 @@
  * @version (a version number or a date)
  */
 import apcslib.*; 
-
+import java.awt.Color.*;
 public class DrawHouse
+
+
 {
     // instance variables - replace the example below with your own
+
     public static void main(String [] args)
 {
     //this is something to memorize 
+
 DrawingTool pencil;
 SketchPad paper;
 //these two were object declarations 
@@ -21,6 +25,7 @@ pencil = new DrawingTool(paper);
 //these two were to create instances of the DrawingTool and SketchPad that are in the library today 
 
 //now, directions: memorize the format for the instructions 
+pencil.getColor ();
 pencil.forward (100);
 pencil.turnRight (90);
 pencil.forward (200);
@@ -55,8 +60,8 @@ pencil.turnRight (90);
 pencil.forward (30);
 pencil.turnRight (90);
 pencil.forward (30);
- 
-  
-  
+
+
+
 }
 }
