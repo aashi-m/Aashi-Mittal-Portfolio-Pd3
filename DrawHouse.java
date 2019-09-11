@@ -6,13 +6,15 @@
  * @version (a version number or a date)
  */
 import apcslib.*; 
+import java.awt.Color.*;
+    //this is something to memorize 
 
 public class DrawHouse
 {
     // instance variables - replace the example below with your own
     public static void main(String [] args)
 {
-    //this is something to memorize 
+
 DrawingTool pencil;
 SketchPad paper;
 //these two were object declarations 
@@ -56,6 +58,9 @@ pencil.forward (30);
 pencil.turnRight (90);
 pencil.forward (30);
  
+
+//how can I add a new color in this? I requested access for the video 
+//that the logo team made
   
   
 }
