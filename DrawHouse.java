@@ -7,6 +7,16 @@
  */
 import apcslib.*; 
 import java.awt.Color.*;
+import javax.swing.*;
+
+    //this is something to memorize 
+    
+class Colour extends JFrame {
+    Colour () 
+    { super ("coluor");
+        Colour brown = new Colour();
+    }
+}
 public class DrawHouse
 
 
@@ -63,5 +73,11 @@ pencil.forward (30);
 
 
 
+ 
+
+//how can I add a new color in this? I requested access for the video 
+//that the logo team made
+  
+  
 }
 }

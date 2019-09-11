@@ -1,0 +1,42 @@
+import java.util.*;
+public class question
+{
+    public static void main(String[] args)
+    {
+        Scanner inp = new Scanner(System.in);
+        
+        assign q1 = new assign();
+        assign q2 = new assign();
+        assign q3 = new assign();
+        
+        List<Character> ansKey = new ArrayList<Character>();
+        List<String> qKey = new ArrayList<String>();
+        
+        int i;
+        
+        q1.getAnswer('a',"How many bytes are in a integer?\nA. 2\nB. 8\nC. 4\nD. 1 ");
+        q2.getAnswer('a',"How do you input?\nA: type\nB. write\nC. Read\nD. ctrl shift esc");
+        
+        ansKey.add(q1.response);
+        ansKey.add(q2.response);
+        
+        qKey.add(q1.q);
+        qKey.add(q2.q);
+        //System.out.println(q1.q);
+        //System.out.println("Response: ");
+        String res;
+        char ans;
+        char ans1;
+        for(i=0;i<2;i++)
+        {
+            System.out.println(qKey.get(i));
+            res = inp.next();
+            ans = res.charAt(0);
+            ans1 = Character.toLowerCase(ans);
+            if(ans1 == ansKey.get(i) )
+                System.out.println("Correct!");
+            else
+                System.out.println("Incorrect");
+        }
+    }
+}

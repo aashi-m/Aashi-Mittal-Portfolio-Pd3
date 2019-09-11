@@ -1,0 +1,67 @@
+import java.util.Scanner;
+/**
+ *
+ * @author (pod 7)
+ * @version (9/4/19)
+ */
+public class datatypes
+{
+    private int errorCode;
+    public datatypes()
+    {
+        errorCode = 0;
+    }
+    public int question1()
+    {
+        Scanner scan = new Scanner(System.in);
+        
+        String a = "a";
+        String b = "b";
+        String c = "c";
+        String d = "d";
+        /*
+         * strings are the valid inputs
+         */
+        
+        int questionNum = 1;
+        /*
+         * number of questions
+         */
+        
+        char[][] answers = new char[2][questionNum];
+        answers[0][0] = 'c';
+        /*
+         * first row is correct answer
+         * second row in given answers
+         */
+        
+        int i = 0;
+        String[] questions = new String[questionNum];
+        /*
+         * string of questions
+         */
+        
+        questions[0] = "Q1, what values can boolean be? \na:true\nb:false\nc:true and false\nd:any asci character";
+        
+        do {
+            System.out.println(questions[i]);
+                while(!scan.hasNext(a) && !scan.hasNext(b) && !scan.hasNext(c) && !scan.hasNext(d)){
+                System.out.println("only input a, b, c, or d");
+                scan.next(); 
+            }   
+               answers[1][i] = scan.next().charAt(0);
+               i++;
+
+    } while(i < questionNum);
+    
+    for(i = 0; i < questionNum; i++)
+    {
+        if(answers[0][i] == answers[1][i]) {
+            System.out.println("Question " + (i + 1) + " is correct");
+        } else if(answers[0][i] != answers [1][i]) {
+            System.out.println("Question " + (i + 1) + " is incorrect. The correct answer is" + answers[0][i]);
+        }
+    }
+        return 0;
+    }
+}
