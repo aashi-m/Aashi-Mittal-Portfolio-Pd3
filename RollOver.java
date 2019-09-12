@@ -29,11 +29,10 @@ public class RollOver
    
     while (i > 0){
         if (i == 1){
-        System.out.println ("There were" + i + space + "in the bed and the little one said");
+        System.out.println ("There was " + i + space + "in the bed and the little one said");
         System.out.println("alone at last");
      }else{
-        System.out.println ("There were");
-        System.out.println (i + space + "in the bed and the little one said");
+        System.out.println ("There were " + i + space + "in the bed and the little one said");
         System.out.println ("Roll over");
         System.out.println ("Roll over");
         System.out.println ("So they all rolled over and one fell off");
