@@ -24,7 +24,6 @@ System.out.println ("*/u000C\nHello, World! In main");
 
 FirstClass first= new FirstClass ();
 System.out.println ("Hello, World! in FirstClass");
-ProductManagers second = new ProductManagers ();
 // errorCode because all classes should check for errors 
 System.out.println ("Hello, World! In ProductManagers"); 
 }
