@@ -12,31 +12,47 @@ public class StartDriver
   public static void main(String[] args) 
   { 
       ConsoleIO keyboard = new ConsoleIO ();
-      int option;
+      int exit;
       Programs caller = new Programs();
       //switch case
-      
-    do 
-    {
-          System.out.println ("Hello! Welcome to Aashi's personal portfolio!");
-          //how do i quit or continue the program?
-          System.out.println ("What kind of program would you like to see?");
-          System.out.println("If you would like to see a drawing, please type '1'.");
-          System.out.println("If you would like to see a nursery rhyme, please type '2'.");
-          System.out.println("if you would like to see a math program, please type '3'.");
+      int answer;
+      System.out.println("Hello! Welcome to Aashi's personal portfolio");
+      System.out.println("Plese press '5' to continue"); 
+      answer = keyboard.readInt();
+    while (answer!=-1){
          
-          option = keyboard.readInt();
-          if (option == 1)
+        System.out.println ("\u000c");
+        System.out.println ("What kind of program would you like to see?");
+         System.out.println("If you would like to see a drawing, please type '1'.");
+         System.out.println("If you would like to see a nursery rhyme, please type '2'.");
+         System.out.println("if you would like to see a math program, please type '3'.");
+         System.out.println("If you would like to exit the program, please type '0'");
+         
+         answer = keyboard.readInt();
+            if (answer == 1){
+            
                 caller.drawingPrograms();
+                try{
+                Thread.sleep(5000);
+            } catch (InterruptedException e){
+                e.printStackTrace();
+            }
+        }
+        
+            if (answer ==2){
+            caller.nurseryPrograms();
+            try {
+            Thread.sleep(5000);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+            if (answer==3)
+                caller.numberPrograms();
          
-          if (option == 2);
-                caller.nurseryPrograms();
-          
-          if (option == 3);
-                caller.numberPrograms(); 
-          
-          
-      } while (option!=0);
-
+            if (answer==0)
+                System.exit(0);
+      } 
   }
 }
+

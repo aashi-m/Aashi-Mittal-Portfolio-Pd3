@@ -70,7 +70,7 @@ public void drawHouse()
     DrawingTool pencil; //object declaration
         SketchPad paper; //object declaration
  
-        paper = new SketchPad (500,500); 
+        paper = new SketchPad (1000,500); 
         pencil = new DrawingTool(paper); 
         //these two were to create instances of the DrawingTool and SketchPad that are in the library today 
         //now, directions: memorize the format for the instructions 
