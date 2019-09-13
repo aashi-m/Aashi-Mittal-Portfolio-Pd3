@@ -5,42 +5,28 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-import java.util.Scanner;
+import chn.util.*;
 public class CountdownPrequel
 {
-    public static void main()
+    public static void main(String[] args)
     {
-    Scanner keyboard = new Scanner (System.in); 
-    String countdown; 
-    String bedJumpers;
-    boolean intchecker;
-    boolean stringchecker;
-    
-    String space = " "; 
+        ConsoleIO keyboard = new ConsoleIO ();      
+        String bedJumpers;                          
+        int numJumps;                               
         
-    System.out.println("Name your jumper: ");
-    bedJumpers = keyboard.nextLine();
-    
-    
-    
+        System.out.println("Name your jumper: ");   
+        bedJumpers = keyboard.readLine();           
         
-    System.out.println ("\n How many jumps: ");
-    countdown = keyboard.nextLine ();
-    int num = Integer.parseInt(countdown);
-    int i = num;
+        System.out.println ("\nHow many jumps: "); 
+        numJumps = keyboard.readInt();                    
    
-    while (i > -1){
-        if (i == 0){
-        System.out.println("No more" + space + bedJumpers + " jumping on the bed");
-     }else{
-        System.out.println (i + space + "little" + space + bedJumpers + " jumping on the bed");
-        System.out.println ("One fell off and bumped his head");
-        System.out.println ("Mama called the doctor and the doctor said");
-        
-        
+        while (numJumps > 0)        
+        {
+            System.out.println (numJumps + " " + "little" + " " + bedJumpers + " jumping on the bed");  
+            System.out.println ("One fell off and bumped his head");
+            System.out.println ("Mama called the doctor and the doctor said");
+            System.out.println("No more monkeys jumping on the bed");
+            numJumps--;
+        }    
     }
-   i--;
-    
-}
-}
 }

@@ -17,9 +17,11 @@ public class CountdownSong
         int i = countdown; 
         String space = " ";
         while (i > -1)
-        if (i == 0){
+        if (i == 0)
+        {
         System.out.println("Zero little" + space + bedJumpers);
-     }  {
+     }  
+     else {
         System.out.println (i + space + "little" + space + bedJumpers + "jumping on the bed");
         System.out.println ("One fell off and broke his head");
         System.out.println ("Mama called the doctor and the doctor said");
