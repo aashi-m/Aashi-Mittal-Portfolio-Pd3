@@ -66,8 +66,8 @@ public void numberPrograms ()
     operators ();
 }
 public void drawHouse()
-    {
-   DrawingTool pencil; //object declaration
+{
+    DrawingTool pencil; //object declaration
         SketchPad paper; //object declaration
  
         paper = new SketchPad (500,500); 
@@ -111,7 +111,8 @@ public void drawHouse()
                 pencil.forward (30);
 }
 public void countdownSong()
-{int i = 10;
+{
+    int i = 10;
         String bedJumpers = "monkeys";
     while (i > 0)
         if (i == 0)
@@ -128,17 +129,17 @@ public void countdownSong()
 }
 public void countdownPrequel()
     {
-        ConsoleIO keyboard = new ConsoleIO ();      
-        String bedJumpers;                          
-        int numJumps;                               
+    ConsoleIO keyboard = new ConsoleIO ();      
+    String bedJumpers;                          
+    int numJumps;                               
         
-        System.out.println("Name your animal (plural): ");   
-        bedJumpers = keyboard.readLine();           
+    System.out.println("Name your animal (plural): ");   
+    bedJumpers = keyboard.readLine();           
         
-        System.out.println ("\nHow many jumps: "); 
-        numJumps = keyboard.readInt();                    
+    System.out.println ("\nHow many jumps: "); 
+    numJumps = keyboard.readInt();                    
    
-        while (numJumps > 0)        
+    while (numJumps > 0)        
         {
             System.out.println (numJumps + " " + "little" + " " + bedJumpers + " jumping on the bed");  
             System.out.println ("One fell off and bumped his head");
@@ -167,7 +168,7 @@ public void rollOver()
     }
    
     System.out.println ("There was " + numOnes + " " + "in the bed and the little one said");
-        System.out.println("alone at last");
+    System.out.println("alone at last");
 }
 
 
