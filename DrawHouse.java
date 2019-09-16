@@ -10,13 +10,7 @@ import java.awt.Color.*;
 import javax.swing.*;
 
     //this is something to memorize 
-    
-class Colour extends JFrame {
-    Colour () 
-    { super ("coluor");
-        Colour brown = new Colour();
-    }
-}
+
 public class DrawHouse
 
 
