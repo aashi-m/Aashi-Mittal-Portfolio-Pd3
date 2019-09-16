@@ -17,7 +17,7 @@ public class DrawBenzene
    
     
     double radius; 
-    double circleradius= 50.0;
+    double circleradius= 50.0; //making a 
     
     pencil.down();
     pencil.drawCircle(circleradius);
