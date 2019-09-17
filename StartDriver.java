@@ -13,9 +13,9 @@ public class StartDriver
   { 
       ConsoleIO keyboard = new ConsoleIO (); //sets up user inpu
       Programs caller = new Programs(); //calls program class containing switch cases and all code
-      int answer;
+      int answer=5;
       System.out.println("Hello! Welcome to Aashi's personal portfolio");
-      System.out.println("Plese press '5' to continue"); 
+      
       answer = keyboard.readInt(); //reads integer input from user
     while (answer!=-1){
          
