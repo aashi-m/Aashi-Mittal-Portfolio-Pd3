@@ -31,7 +31,7 @@ public class StartDriver
             
                 caller.drawingPrograms(); //if the user input is 1, then drawingprograms class is called, then switch case activated
                 try{
-                Thread.sleep(5000);
+                Thread.sleep(4000);
             } catch (InterruptedException e){
                 e.printStackTrace(); //this allows user time to view code before loop continues
             }
@@ -40,17 +40,27 @@ public class StartDriver
         if (answer ==2){
             caller.nurseryPrograms();// if user input 2, then nurseryprograms called, &swtich case there activated
             try {
-            Thread.sleep(5000);
+            Thread.sleep(4000);
             }catch (InterruptedException e) {
             e.printStackTrace(); //allows user time to view code before loop continues
             }
         }
-        if (answer==3)
-                caller.numberPrograms();
+        if (answer==3){
+            caller.mathPrograms();
+            try{
+            Thread.sleep(4000);
+            }
+            catch (InterruptedException e){
+            e.printStackTrace();
+            }
+        }
+                    
+                
          
         if (answer==0)
                 System.exit(0);
       } 
   }
 }
+
 

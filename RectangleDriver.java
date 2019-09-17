@@ -19,11 +19,11 @@ class RectangleDriver
     rect.draw();
     
     
-    Rectangle rect2 = new Rectangle(100,100,200,100);
-    rect2.drawtwo();
+    //Rectangle rect2 = new Rectangle(100,100,200,100);
+    //rect2.drawtwo();
     
-    Rectangle rect3 = new Rectangle(100,100,200/3, 400/3);
-    rect3.drawthree();
+    //Rectangle rect3 = new Rectangle(100,100,200/3, 400/3);
+    //rect3.drawthree();
  
    
     }
