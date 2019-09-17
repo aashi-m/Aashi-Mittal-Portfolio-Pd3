@@ -59,6 +59,26 @@ public void nurseryPrograms()
             break;
     }
 }
+public void mathPrograms()
+{
+    ConsoleIO k = new ConsoleIO();
+    int optionthree;
+    System.out.println("What kind of math program would you like to see?");
+    System.out.println ("If you would like to see 'Get your change by coin' program, please type '1'");
+    System.out.println("If you would like tosee the 'Math Fun lab' program, please type '2'");
+    
+    optionthree = k.readInt();
+    switch (optionthree)
+    {
+        case 1:
+        change();
+        break;
+        case 2:
+        mathfun();
+        break;
+    }
+}
+        
 public void numberPrograms ()
 {
     ConsoleIO k = new ConsoleIO ();
@@ -177,6 +197,67 @@ public void operators ()
         for (x = 1; x <= 10; x++);
    {System.out.println (x);
     }
+    
+}
+public void change ()
+{
+    double paid, price, change;
+       int dimes, nickels, pennies;
+       
+       ConsoleIO keyboard = new ConsoleIO();
+       System.out.println("How much did you pay?");
+       paid = keyboard.readDouble();
+       
+       
+       ConsoleIO keyboardtwo = new ConsoleIO();
+       System.out.println("How much was the price?");
+       price = keyboardtwo.readDouble();
+       
+       change = paid - price;
+       change = change - (int)change; 
+       pennies = (int) (change * 100);
+       
+       dimes = (int) pennies/10;
+       nickels = (int) ((pennies%10)/5);
+       pennies = (int) (pennies%5);
+       
+       System.out.println("The number of dimes of change is " + dimes);
+       System.out.println("The number of nickels of change is " + nickels);
+       System.out.println("The number of pennies of change is " + pennies);
+}
+public void mathfun()
+{
+    int a = 4;
+    int b = 9;
+    int AnswerOne = (a + b);
+    System.out.println("4 + 9 ="  + AnswerOne);
+    
+    int c = 46;
+    int d = 7;
+    int AnswerTwo = (c / d);
+    System.out.println(" 46 / 7 = " + AnswerTwo);
+    
+    int e = 47;
+    int f = 7;
+    int AnswerThree = (e % f);
+    System.out.println(" 47 % 7 = " + AnswerThree);
+    
+    int g = 2;
+    double h = 3.0; 
+    double AnswerFour = (2 * 3.0);
+    System.out.println(" 2 * 3.0 = " + AnswerFour);
+    
+    double Answer5 = (double)25 / 4;
+    System.out.println (Answer5);
+    int Answer6 = (int)7.75 + 2;
+    System.out.println(Answer6);
+    int Answer7 = (int) 'p';
+    System.out.println(Answer7);
+    char Answer8 = (char)105;
+    System.out.println(Answer8);
+   
+    System.out.println("The largest value of type int =" + Integer.MAX_VALUE);
+   
     
 }
 }

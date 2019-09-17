@@ -29,7 +29,6 @@ pencil = new DrawingTool(paper);
 //these two were to create instances of the DrawingTool and SketchPad that are in the library today 
 
 //now, directions: memorize the format for the instructions 
-pencil.getColor ();
 pencil.forward (100);
 pencil.turnRight (90);
 pencil.forward (200);

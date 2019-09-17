@@ -11,14 +11,12 @@ public class StartDriver
 {
   public static void main(String[] args) 
   { 
-      ConsoleIO keyboard = new ConsoleIO ();
-      int exit;
-      Programs caller = new Programs();
-      //switch case
+      ConsoleIO keyboard = new ConsoleIO (); //sets up user inpu
+      Programs caller = new Programs(); //calls program class containing switch cases and all code
       int answer;
       System.out.println("Hello! Welcome to Aashi's personal portfolio");
       System.out.println("Plese press '5' to continue"); 
-      answer = keyboard.readInt();
+      answer = keyboard.readInt(); //reads integer input from user
     while (answer!=-1){
          
         System.out.println ("\u000c");
@@ -28,29 +26,29 @@ public class StartDriver
          System.out.println("if you would like to see a math program, please type '3'.");
          System.out.println("If you would like to exit the program, please type '0'");
          
-         answer = keyboard.readInt();
-            if (answer == 1){
+         answer = keyboard.readInt(); //reads integer input from user 
+         if (answer == 1){
             
-                caller.drawingPrograms();
+                caller.drawingPrograms(); //if the user input is 1, then drawingprograms class is called, then switch case activated
                 try{
                 Thread.sleep(5000);
             } catch (InterruptedException e){
-                e.printStackTrace();
+                e.printStackTrace(); //this allows user time to view code before loop continues
             }
         }
         
-            if (answer ==2){
-            caller.nurseryPrograms();
+        if (answer ==2){
+            caller.nurseryPrograms();// if user input 2, then nurseryprograms called, &swtich case there activated
             try {
             Thread.sleep(5000);
-        }catch (InterruptedException e) {
-            e.printStackTrace();
+            }catch (InterruptedException e) {
+            e.printStackTrace(); //allows user time to view code before loop continues
+            }
         }
-    }
-            if (answer==3)
+        if (answer==3)
                 caller.numberPrograms();
          
-            if (answer==0)
+        if (answer==0)
                 System.exit(0);
       } 
   }
