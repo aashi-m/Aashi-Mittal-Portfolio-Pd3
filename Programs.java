@@ -7,7 +7,7 @@ public class Programs
     /**
      * Constructor for objects of class Programs
      */
-    public Programs()
+    public Programs()//this is my programs class, which will be accessed d
     {
     }
 
@@ -67,7 +67,7 @@ public void mathPrograms()
     System.out.println("What kind of math program would you like to see?");
     System.out.println ("If you would like to see 'Get your change by coin' program, please type '1'");
     System.out.println("If you would like to see the 'Math Fun lab' program, please type '2'");
-    System.out.println("if you would like to see the quadratic lab, progra, please type '3'");
+    System.out.println("if you would like to see the quadratic lab, program, please type '3'");
     optionthree = k.readInt();
     switch (optionthree)
     {

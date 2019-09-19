@@ -16,7 +16,7 @@ public class StartDriver
       int answer=5;
       System.out.println("Hello! Welcome to Aashi's personal portfolio");
       
-      answer = keyboard.readInt(); //reads integer input from user
+      //reads integer input from user
     while (answer!=-1){
          
         System.out.println ("\u000c");

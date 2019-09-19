@@ -18,14 +18,7 @@ public class Rectangle
     private static SketchPad paper = new SketchPad(500, 500);
     private DrawingTool pencil = new DrawingTool(paper);
     
-    public Rectangle()
-    {
-        myX = 0;
-        myY = 0;
-        myWidth = 3;
-        myHeight = 5;
-        
-    }
+    
     
     public Rectangle(double initialX, double initialY, double initialWidth, double initialHeight)
     {
@@ -51,10 +44,6 @@ public class Rectangle
     
     public void draw()
     {
-
-        
-        
-        
         pencil.up ();
         pencil.forward(myY*0.5);
         pencil.turnRight(90);
