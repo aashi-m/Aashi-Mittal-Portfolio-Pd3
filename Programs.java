@@ -3,7 +3,7 @@ import chn.util.*;
 
 public class Programs
 {  
-    //construtor
+    //Constructor
     /**
      * Constructor for objects of class Programs
      */
